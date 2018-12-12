@@ -135,7 +135,7 @@ declare module "next/router" {
     +asPath: string,
     +query: Object,
     events: RouterEvents,
-    onRouteChangeComplete: void,
+    onRouteChangeComplete: ?RouteCallback,
     push(
       url: string | URLObject,
       as: ?(string | URLObject),
